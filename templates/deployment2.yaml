@@ -83,23 +83,23 @@ subjects:
     namespace: "keel"
 ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: keel
-  namespace: "keel"
-  labels:
-    app: keel
-spec:
-  type: LoadBalancer
-  ports:
-    - port: 9300
-      targetPort: 9300
-      protocol: TCP
-      name: keel
-  selector:
-    app: keel
-  sessionAffinity: None
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: keel
+#  namespace: "keel"
+#  labels:
+#    app: keel
+#spec:
+#  type: LoadBalancer
+#  ports:
+#    - port: 9300
+#      targetPort: 9300
+#      protocol: TCP
+#      name: keel
+#  selector:
+#    app: keel
+#  sessionAffinity: None
 
 ---
 apiVersion: apps/v1
